@@ -1,0 +1,231 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>felxbox_01</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Le Louvre</a>
+          <a href="#secc2">Evento</a>
+          <a href="#secc3">Invitados</a>
+          <a href="#secc4">Ubicación 360°</a>
+         
+		  
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>El Alma del Arte: El Louvre</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Ubicado en el majestuoso Palacio del Louvre, en el corazón de París, este museo es un símbolo del arte y la historia. Con más de 35,000 obras en exhibición y una colección que abarca desde civilizaciones antiguas hasta el Renacimiento y la modernidad, el Louvre es mucho más que un museo: es un testigo de la evolución cultural de la humanidad.
+
+Entre sus tesoros más icónicos se encuentran la Mona Lisa de Leonardo da Vinci, la imponente Victoria de Samotracia, la enigmática Venus de Milo y la majestuosa Pirámide de Cristal que da la bienvenida a millones de visitantes cada año.
+
+Más que un simple destino turístico, el Louvre es un epicentro de inspiración y conocimiento, donde cada pasillo y cada galería cuentan una historia única.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Con sus vastas galerías y su icónica pirámide de cristal, el Louvre ofrece a los visitantes una experiencia única e inolvidable. Cada rincón del museo revela siglos de historia y creatividad humana, convirtiéndolo en un destino imprescindible para cualquier amante del arte y la cultura.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>Luz y cristal: La Pirámide del Louvre, una maravilla arquitectónica.</p>
+	        		<!--texto para imagen a la derecha-->
+	        		<p>Salas Rojas: la epopeya del arte francés desplegada ante tus ojos. Pasión, poder y belleza en cada lienzo.</p>
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Luz y cristal: La Pirámide del Louvre, una maravilla arquitectónica.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Salas Rojas: la epopeya del arte francés desplegada ante tus ojos. Pasión, poder y belleza en cada lienzo.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>  Lettres et Lumière: Una noche donde las palabras, las letras y el cine iluminan París</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Bienvenidos al Festival Internacional Lettres et Lumière, un evento único que celebra el poder de la palabra escrita y el cine como herramientas de transformación cultural.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+				<p> Fecha: 2 de mayo de 2025<p>
+				<p>Ubicación: Afueras del Museo del Louvre, París<p>
+				<p> Este prestigioso festival reúne a escritores, pensadores y cineastas en una experiencia inolvidable. A medida que el sol se oculta y las luces de la ciudad emergen, el festival nocturno ofrecerá una atmósfera envolvente donde el conocimiento, la literatura y el cine se fusionan bajo las estrellas. Durante la velada, destacados autores y analistas compartirán su visión sobre el impacto de la literatura y el cine en la sociedad contemporánea.<p>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img2.png" title="Img 2">
+        		<!--texto para la imagen-->
+        		<p>Consulta el programa del festival para conocer los horarios y las conferencias destacadas </p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Pantalla y Papel: Charlas, Libros y Cine en Lettres et Lumière</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El Festival Lettres et Lumière trasciende el mero evento cultural para convertirse en un laboratorio de pensamiento crítico, donde la literatura y el cine se entrelazan como herramientas para diseccionar realidades sociales, políticas y filosóficas. Más allá de ofrecer un espacio de reflexión y diálogo, el festival propone un viaje intelectual a través de conferencias, obras literarias y proyecciones audiovisuales que cuestionan estructuras de poder, manipulación y distopías contemporáneas..</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Conferencias <p>
+				<p>La literatura emerge como eje central del evento, con obras como 1984 de George Orwell, un espejo de la vigilancia estatal y el control social, y Un Mundo Feliz de Aldous Huxley, que expone los peligros de la ingeniería biotecnológica. A estas se suman The Rape of the Mind de Joost Meerloo, un análisis sobre la psicología de la manipulación colectiva, y Confesiones de un sicario económico de John Perkins, un relato crudo sobre los mecanismos ocultos del capitalismo global. Estas lecturas dialogan con proyecciones como Land of the Blind, una sátira de revoluciones fallidas; el documental Zeitgeist, que desafía narrativas económicas y religiosas, The Money Masters, un recorrido histórico sobre el dominio financiero.
+
+Cada elemento —charla, libro o filme— se acompaña de material exclusivo (disponible en los enlaces adjuntos), tejiendo una red de análisis que invita al público no solo a observar, sino a deconstruir y replantear las ideas presentadas. El festival, en esencia, es una puerta abierta para explorar lo que yace tras el velo de lo cotidiano, utilizando el arte como herramienta para revelar las complejidades del mundo que habitamos. </p>
+
+
+				<br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/img3.png" title="Img 3">
+        		<!--texto para la imagen-->
+        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Ubicación 360°</h1>
+		<!DOCTYPE html>
+<html>
+<head>
+    <title>Página con Visor 360 VR</title>
+    <style>
+        /* Opcional: Estilos para centrar el visor */
+        .vr-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explora la ubicación del Festival</h1>
+	<p>Usa el mouse o los controles táctiles para moverte en la escena.</p>
+    
+    <!-- Contenedor del visor 360 -->
+    <div class="vr-container">
+        <iframe 
+            src="https://eglfadu.github.io/360vr/" 
+            width="100%" 
+            height="600px" 
+            allow="accelerometer; gyroscope; xr-spatial-tracking" 
+            allowfullscreen
+            sandbox="allow-scripts allow-same-origin"
+            frameborder="0"
+        ></iframe>
+		
+    </div>
+
+   
+</body>
+</html>
+    		</div>
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">todos los derechos a sus respectivos autores</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/flecha-arriba.png">
+	    </a>
+
+</body>
+
+</html>
